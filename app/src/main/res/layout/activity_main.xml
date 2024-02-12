@@ -7,6 +7,4 @@
     android:id="@+id/container"
     tools:context=".MainActivity">
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

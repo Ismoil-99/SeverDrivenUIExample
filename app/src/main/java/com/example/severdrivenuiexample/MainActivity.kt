@@ -29,6 +29,10 @@ class MainActivity : AppCompatActivity() {
         environment.parseTemplates(templates)
         val divDate =  DivData(environment, card)
         val divView = Div2View(Div2Context(baseContext = this, configuration = createDivConfiguration()))
+        divView.layoutParams = ConstraintLayout.LayoutParams(
+            ConstraintLayout.LayoutParams.MATCH_PARENT,
+            ConstraintLayout.LayoutParams.MATCH_PARENT,
+        )
         findViewById<ConstraintLayout>(R.id.container).addView(divView)
         divView.setData(divDate, DivDataTag("hello"))
     }
@@ -45,7 +49,7 @@ class MainActivity : AppCompatActivity() {
     }
     class DemoDivActionHandler: DivActionHandler() {
         override fun handleAction(action: DivAction, view: DivViewFacade): Boolean {
-            Log.d("value","$action")
+            Log.d("value","${action.logId}")
             return super.handleAction(action, view)
         }
     }
