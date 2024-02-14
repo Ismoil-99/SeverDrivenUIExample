@@ -126,7 +126,12 @@
                 {
                   "type": "card_actions",
                   "actions_logo":"https://png.pngtree.com/png-vector/20190215/ourmid/pngtree-vector-wallet-icon-png-image_515300.jpg",
-                  "actions_text": "Оплатить"
+                  "actions_text": "Оплатить",
+                  "actions": [
+                    {
+                      "log_id": "open_pay",
+                      "url": "div-action://open_screen?fragment=payment"
+                    }]
                 },
                 {
                   "type": "card_actions",

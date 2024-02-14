@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentMain">
+
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.example.severdrivenuiexample.ui.FragmentMain"
+        android:label=""
+        tools:layout="@layout/fragment_main_layout"
+        />
+    <fragment
+        android:id="@+id/showDivKitsFragment"
+        android:name="com.example.severdrivenuiexample.ui.ShowDivKitsFragment"
+        android:label="ShowDivKitsFragment"
+        tools:layout="@layout/fragment_show_div_kits">
+          </fragment>
+
+    <action
+        android:id="@+id/to_show_divkit"
+        app:destination="@+id/showDivKitsFragment"
+        />
+    <fragment
+        android:id="@+id/paymenstFragment"
+        android:name="com.example.severdrivenuiexample.ui.PaymenstFragment"
+        android:label="fragment_paymenst"
+        tools:layout="@layout/fragment_paymenst" >
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="com.example.severdrivenuiexample://payment/" />
+
+
+    </fragment>
+
+
+</navigation>

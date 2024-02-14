@@ -91,7 +91,12 @@
               "items": [
                 {
                   "type": "text_block",
-                  "text": "Item 0"
+                  "text": "Item 0",
+                  "actions": [
+                    {
+                      "log_id": "open_pay",
+                      "url": "div-action://open_screen?fragment=payments"
+                    }]
                 },
                 {
                   "type": "text_block",
