@@ -136,7 +136,12 @@
                 {
                   "type": "card_actions",
                   "actions_logo": "https://static.thenounproject.com/png/78107-200.png",
-                  "actions_text": "QR Код"
+                  "actions_text": "QR Код",
+                  "actions": [
+                  {
+                    "log_id": "open_pay",
+                    "url": "div-action://open_screen?fragment=qr"
+                  }]
                 },
                 {
                   "type": "card_actions",
@@ -152,6 +157,11 @@
                   "type": "card_actions",
                   "actions_logo": "https://cdn.icon-icons.com/icons2/1369/PNG/512/-history_89998.png",
                   "actions_text": "Последние платежи"
+                },
+                {
+                  "type": "card_actions",
+                  "actions_logo": "https://cdn.icon-icons.com/icons2/1369/PNG/512/-history_89998.png",
+                  "actions_text": "Реквизиты"
                 }
               ]
             }

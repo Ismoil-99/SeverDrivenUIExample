@@ -30,8 +30,16 @@
         <deepLink
             android:id="@+id/deepLink"
             app:uri="com.example.severdrivenuiexample://payment/" />
-
-
+    </fragment>
+    <fragment
+        android:id="@+id/qrFragment"
+        android:name="com.example.severdrivenuiexample.ui.QrFragment"
+        android:label="QrFragment"
+        tools:layout="@layout/fragment_qr"
+        >
+        <deepLink
+            android:id="@+id/to_qr"
+            app:uri="com.example.severdrivenuiexample://qr/" />
     </fragment>
 
 
